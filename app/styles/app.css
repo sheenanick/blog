@@ -25,9 +25,7 @@ nav a {
 
 .nav {
   background-color: #5355FF;
-}
-
-.nav-link-div {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
