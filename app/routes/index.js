@@ -6,5 +6,6 @@ export default Ember.Route.extend({
       posts: this.store.findAll('post'),
       comments: this.store.findAll('comment')
     });
-  }
+  },
+  
 });

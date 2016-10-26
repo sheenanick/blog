@@ -1,12 +1,4 @@
-.about-link {
-  float: left;
-}
-
-.admin-link {
-  float: right;
-}
-
-img {
+.post-image {
   width: 600px;
   border: 10px;
   border-style: outset;
@@ -14,16 +6,14 @@ img {
   display: block;
 }
 
-.navbar {
-  background-image: url(/image/city-banner.jpg);
-  background-size: cover;
-  height: 250px;
-  opacity: .80;
-}
-
 body {
   background-color: rgb(29, 89, 135);
   text-align: center;
+}
+
+header {
+  background-image: url(/image/city-banner.jpg);
+  background-size: cover;
 }
 
 nav a {
@@ -37,6 +27,17 @@ nav a {
   background-color: #5355FF;
 }
 
+.nav-link-div {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+
+  height: 250px;
+  opacity: .80;
+}
+
 .post {
   display: block;
   margin: auto;
@@ -46,17 +47,7 @@ nav a {
   font-size: 24px;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-ul li {
-  text-align: center;
-}
-
 #header-name {
   font-family: 'Pacifico', cursive;
   font-size: 50px;
-
 }

@@ -1,28 +1,28 @@
 <header>
+  <h1 id="header-name">Annie's Portland Favorites</h1>
   <nav class="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <img src="image/menu.png" alt="" />
         </button>
       </div>
-
       <div class="collapse navbar-collapse" id="navbar1">
-        <h1 id="header-name">Annie's Portland Favorites</h1>
+
         <br>
         <br>
         <br>
         <br>
         <br>
         <br>
-        <ul class="nav navbar-nav">
-          <li class="nav-links">{{#link-to 'index'}}Home{{/link-to}}</li>
-          <li class="nav-links">{{#link-to "about"}}About Annie {{/link-to}}</li>
-          <li class="nav-links">{{#link-to "contact"}}Contact Annie {{/link-to}}</li>
-          <li class="nav-links">{{#link-to "admin"}}Admin Page {{/link-to}}</li>
-        </ul>
+        <div class="nav-link-div">
+          <ul class="nav navbar-nav">
+            <li class="nav-links">{{#link-to 'index'}}Home{{/link-to}}</li>
+            <li class="nav-links">{{#link-to "about"}}About Annie {{/link-to}}</li>
+            <li class="nav-links">{{#link-to "contact"}}Contact Annie {{/link-to}}</li>
+            <li class="nav-links">{{#link-to "admin"}}Admin Page {{/link-to}}</li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
