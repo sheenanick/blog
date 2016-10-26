@@ -1,5 +1,5 @@
 <header>
-  <nav class="navbar navbar-default">
+  <nav class="navbar">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
@@ -8,18 +8,26 @@
           <span class="icon-bar"></span>
         </button>
       </div>
+
       <div class="collapse navbar-collapse" id="navbar1">
-        <h1>Annie's Portland Blog</h1>
+        <h1 id="header-name">Annie's Portland Favorites</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <ul class="nav navbar-nav">
-          <li>{{#link-to 'index'}}Home{{/link-to}}</li>
-          <li>{{#link-to "about"}}About Annie {{/link-to}}</li>
-          <li>{{#link-to "contact"}}Contact Annie {{/link-to}}</li>
-          <li>{{#link-to "admin"}}Admin Page {{/link-to}}</li>
+          <li class="nav-links">{{#link-to 'index'}}Home{{/link-to}}</li>
+          <li class="nav-links">{{#link-to "about"}}About Annie {{/link-to}}</li>
+          <li class="nav-links">{{#link-to "contact"}}Contact Annie {{/link-to}}</li>
+          <li class="nav-links">{{#link-to "admin"}}Admin Page {{/link-to}}</li>
         </ul>
       </div>
     </div>
   </nav>
 </header>
+<br>
 <div class="container">
   {{outlet}}
 </div>

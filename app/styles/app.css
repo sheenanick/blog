@@ -5,3 +5,58 @@
 .admin-link {
   float: right;
 }
+
+img {
+  width: 600px;
+  border: 10px;
+  border-style: outset;
+  margin: auto;
+  display: block;
+}
+
+.navbar {
+  background-image: url(/image/city-banner.jpg);
+  background-size: cover;
+  height: 250px;
+  opacity: .80;
+}
+
+body {
+  background-color: rgb(29, 89, 135);
+  text-align: center;
+}
+
+nav a {
+  font-size: 30px;
+  font-family: 'Dawning of a New Day', cursive;
+  color: #85FFFA !important;
+  margin: 20px;
+}
+
+.nav {
+  background-color: #5355FF;
+}
+
+.post {
+  display: block;
+  margin: auto;
+  max-width: 650px;
+  text-align: center;
+  font-family: 'The Girl Next Door', cursive;
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul li {
+  text-align: center;
+}
+
+#header-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+
+}
