@@ -8,9 +8,9 @@
 <br>
 <br>
 {{new-comment saveComment="saveComment" post=post}}
-<h3>Comments</h3>
-<ul>
+{{#if post.comments}}
+  <h3>Comments</h3>
   {{#each post.comments as |comment|}}
     {{comment-tile comment=comment destroyComment="destroyComment" update="update"}}
   {{/each}}
-</ul>
+{{/if}}

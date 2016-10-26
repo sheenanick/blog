@@ -18,9 +18,9 @@
         <label for="image">Image URL</label>
         {{input value=image id="image" placeholder=post.image}}
       </div>
-      <button {{action 'update' post}}>Save</button>
+      <button class="btn btn-default" {{action 'update' post}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updatePostForm'}}>Update</button>
+  <button class="btn btn-default" {{action 'updatePostForm'}}>Update</button>
 {{/if}}

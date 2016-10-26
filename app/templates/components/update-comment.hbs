@@ -18,9 +18,9 @@
         <label for="text">Text</label>
         {{input value=text id="text" placeholder=comment.text}}
       </div>
-      <button {{action 'update' comment}}>Save</button>
+      <button class="btn btn-default" {{action 'update' comment}}>Save</button>
     </form>
   </div>
 {{else}}
-  <button {{action 'updateCommentForm'}}>Update</button>
+  <button class="btn btn-default btn-xs" {{action 'updateCommentForm'}}>Update</button>
 {{/if}}

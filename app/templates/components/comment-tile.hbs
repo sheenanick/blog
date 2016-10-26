@@ -1,4 +1,4 @@
-<li>{{comment.title}} - {{comment.date}} - {{comment.author}} - {{comment.text}}</li>
+{{comment.title}} - {{comment.date}} - {{comment.author}} - {{comment.text}}
 <br>
 {{update-comment comment=comment update="update"}}
-<button {{action 'delete' comment}}>Delete Comment</button>
+<button class="btn btn-danger btn-xs" {{action 'delete' comment}}>Delete</button>
