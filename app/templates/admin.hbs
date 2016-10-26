@@ -3,5 +3,6 @@
 {{new-post savePost="savePost"}}
 
 {{#each model.posts as |post|}}
-  {{admin-tile post=post destroyPost="destroyPost"}}
+  {{admin-tile post=post destroyPost="destroyPost" update="update"}}
+
 {{/each}}
