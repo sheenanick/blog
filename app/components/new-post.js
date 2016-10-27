@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   actions: {
@@ -9,7 +10,6 @@ export default Ember.Component.extend({
         text: this.get('post-text'),
         image: this.get('post-image')
       };
-      console.log(params);
       this.sendAction('savePost', params);
     }
   }

@@ -5,6 +5,6 @@
     {{recent-comments comment=comment}}
   {{/each}}
 </div>
-{{#each model.posts as |post|}}
+{{#each model.topFivePosts as |post|}}
   {{post-tile post=post destroyPost="destroyPost"}}
 {{/each}}
