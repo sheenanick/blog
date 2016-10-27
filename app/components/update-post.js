@@ -9,7 +9,6 @@ export default Ember.Component.extend({
     update(post) {
       var params = {
         title: this.get('title'),
-        date: this.get('date'),
         text: this.get('text'),
         image: this.get('image')
       };

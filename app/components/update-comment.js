@@ -9,7 +9,6 @@ export default Ember.Component.extend({
     update(comment) {
       var params = {
         title: this.get('update-title'),
-        date: this.get('update-date'),
         author: this.get('update-author'),
         text: this.get('update-text')
       };

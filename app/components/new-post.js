@@ -5,7 +5,7 @@ export default Ember.Component.extend({
     savePost() {
       var params = {
         title: this.get('post-title'),
-        date: this.get('post-date'),
+        date: moment().format('MMMM Do YYYY'),
         text: this.get('post-text'),
         image: this.get('post-image')
       };

@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import moment from 'moment';
 
 export default Ember.Component.extend({
   addNewComment: false,
@@ -9,7 +10,7 @@ export default Ember.Component.extend({
     saveComment() {
       var params = {
         title: this.get('comment-title'),
-        date: this.get('comment-date'),
+        date: moment().format('MMMM Do YYYY'),
         author: this.get('comment-author'),
         text: this.get('comment-text'),
         post: this.get('post')
