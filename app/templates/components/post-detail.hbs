@@ -10,10 +10,9 @@
 </div>
 <div class="boxed">
   <br>
-
   {{#if post.comments}}
     <h3>Comments</h3>
-    {{#each post.comments as |comment|}}
+    {{#each sortedComments as |comment|}}
       {{comment-tile comment=comment destroyComment="destroyComment" update="update" post=post}}
     {{/each}}
   {{/if}}
