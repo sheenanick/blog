@@ -1,16 +1,20 @@
-<h2>{{post.title}}</h2>
-<h5>{{post.date}}</h5>
-<img class="post-image" src="{{post.image}}"/>
-<br>
-<p class="post">
-  {{post.text}}
-</p>
-<br>
-<br>
-{{new-comment saveComment="saveComment" post=post}}
-{{#if post.comments}}
-  <h3>Comments</h3>
-  {{#each post.comments as |comment|}}
-    {{comment-tile comment=comment destroyComment="destroyComment" update="update" post=post}}
-  {{/each}}
-{{/if}}
+<div class="boxed">
+  <h2>{{post.title}}</h2>
+  <h5>{{post.date}}</h5>
+  <img class="post-image" src="{{post.image}}"/>
+  <br>
+  <p class="post">
+    {{post.text}}
+  </p>
+  {{new-comment saveComment="saveComment" post=post}}
+</div>
+<div class="boxed">
+  <br>
+
+  {{#if post.comments}}
+    <h3>Comments</h3>
+    {{#each post.comments as |comment|}}
+      {{comment-tile comment=comment destroyComment="destroyComment" update="update" post=post}}
+    {{/each}}
+  {{/if}}
+</div>

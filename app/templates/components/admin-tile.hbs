@@ -1,6 +1,8 @@
-{{#link-to 'post' post.id}}
-  <h2>{{post.title}}</h2>
-{{/link-to}}
-<h5>{{post.date}}</h5>
-{{update-post post=post update="update"}}
-<button class="btn btn-danger" {{action 'destroyPost' post}}>Delete Post</button>
+<div class="boxed">
+  {{#link-to 'post' post.id}}
+    <h2>{{post.title}}</h2>
+  {{/link-to}}
+  <h5>{{post.date}}</h5>
+  {{update-post post=post update="update"}}
+  <button class="btn btn-danger" {{action 'destroyPost' post}}>Delete Post</button>
+</div>

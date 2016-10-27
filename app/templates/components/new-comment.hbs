@@ -1,26 +1,28 @@
-{{#if addNewComment}}
-<h1>New Comment</h1>
-  <div>
-    <form>
-      <div class="form-group">
-        <label for="title">Title</label>
-        {{input value=title id="title"}}
-      </div>
-      <div class="form-group">
-        <label for="date">Date</label>
-        {{input value=date id="date"}}
-      </div>
-      <div class="form-group">
-        <label for="author">Author</label>
-        {{input value=author id="author"}}
-      </div>
-      <div class="form-group">
-        <label for="text">Text</label>
-        {{input value=text id="text"}}
-      </div>
-      <button class="btn btn-default" {{action 'saveComment'}}>Save</button>
-    </form>
-  </div>
-{{else}}
-  <button class="btn btn-default" {{action 'commentFormShow'}}>New Comment</button>
-{{/if}}
+<div class="boxed">
+  {{#if addNewComment}}
+  <h1>New Comment</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="comment-title">Title</label>
+          {{input value=comment-title id="comment-title"}}
+        </div>
+        <div class="form-group">
+          <label for="comment-date">Date</label>
+          {{input value=comment-date id="comment-date"}}
+        </div>
+        <div class="form-group">
+          <label for="comment-author">Author</label>
+          {{input value=comment-author id="comment-author"}}
+        </div>
+        <div class="form-group">
+          <label for="comment-text">Text</label>
+          {{input value=comment-text id="comment-text"}}
+        </div>
+        <button class="btn btn-default" {{action 'saveComment'}}>Save</button>
+      </form>
+    </div>
+  {{else}}
+    <button class="btn btn-default" {{action 'commentFormShow'}}>New Comment</button>
+  {{/if}}
+</div>

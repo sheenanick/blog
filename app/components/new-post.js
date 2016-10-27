@@ -4,11 +4,12 @@ export default Ember.Component.extend({
   actions: {
     savePost() {
       var params = {
-        title: this.get('title'),
-        date: this.get('date'),
-        text: this.get('text'),
-        image: this.get('image')
+        title: this.get('post-title'),
+        date: this.get('post-date'),
+        text: this.get('post-text'),
+        image: this.get('post-image')
       };
+      console.log(params);
       this.sendAction('savePost', params);
     }
   }

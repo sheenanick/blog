@@ -8,10 +8,10 @@ export default Ember.Component.extend({
     },
     update(comment) {
       var params = {
-        title: this.get('title'),
-        date: this.get('date'),
-        author: this.get('author'),
-        text: this.get('text')
+        title: this.get('update-title'),
+        date: this.get('update-date'),
+        author: this.get('update-author'),
+        text: this.get('update-text')
       };
       this.set('updateCommentForm', false);
       this.sendAction('update', comment, params);

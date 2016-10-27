@@ -8,10 +8,10 @@ export default Ember.Component.extend({
     },
     saveComment() {
       var params = {
-        title: this.get('title'),
-        date: this.get('date'),
-        author: this.get('author'),
-        text: this.get('text'),
+        title: this.get('comment-title'),
+        date: this.get('comment-date'),
+        author: this.get('comment-author'),
+        text: this.get('comment-text'),
         post: this.get('post')
       };
       this.set('addNewComment', false);

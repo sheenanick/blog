@@ -1,22 +1,24 @@
-<h1>New Post</h1>
-<div>
-  <form>
-    <div class="form-group">
-      <label for="title">Title</label>
-      {{input value=title id="title"}}
-    </div>
-    <div class="form-group">
-      <label for="date">Date</label>
-      {{input value=date id="date"}}
-    </div>
-    <div class="form-group">
-      <label for="text">Text</label>
-      {{input value=text id="text"}}
-    </div>
-    <div class="form-group">
-      <label for="image">Image URL</label>
-      {{input value=image id="image"}}
-    </div>
-    <button class="btn btn-default" {{action 'savePost'}}>Save</button>
-  </form>
+<div class="boxed">
+  <h1>New Post</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="post-title">Title</label>
+        {{input value=post-title id="post-title"}}
+      </div>
+      <div class="form-group">
+        <label for="post-date">Date</label>
+        {{input value=post-date id="post-date"}}
+      </div>
+      <div class="form-group">
+        <label for="post-text">Text</label>
+        {{input value=post-text id="post-text"}}
+      </div>
+      <div class="form-group">
+        <label for="post-image">Image URL</label>
+        {{input value=post-image id="post-image"}}
+      </div>
+      <button class="btn btn-default" {{action 'savePost'}}>Save</button>
+    </form>
+  </div>
 </div>

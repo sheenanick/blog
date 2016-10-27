@@ -1,6 +1,7 @@
 body {
   background-color: rgb(29, 89, 135);
   text-align: center;
+  color: #2D73AD;
 }
 
 header {
@@ -15,11 +16,23 @@ nav a {
   margin: 20px;
 }
 
+.boxed  {
+  background: #003F82;
+  margin: 50px auto;
+  border: 0 none;
+  padding: 20px;
+  opacity: .8;
+}
+
 .nav {
-  background-color: #5355FF;
+  background-color: #003F82;
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.btn {
+  margin: 5px;
 }
 
 .navbar {
@@ -43,6 +56,24 @@ nav a {
   border-style: outset;
   margin: auto;
   display: block;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#7EE8D4,#82BDFC,#82BDFC);
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    color: white;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
 }
 
 #header-name {

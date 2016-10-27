@@ -7,5 +7,12 @@ export default Ember.Route.extend({
       comments: this.store.findAll('comment')
     });
   },
-  
+  actions: {
+    openNav() {
+      document.getElementById("mySidenav").style.width = "352px";
+    },
+    closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  }
 });
