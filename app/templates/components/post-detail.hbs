@@ -11,6 +11,6 @@
 {{#if post.comments}}
   <h3>Comments</h3>
   {{#each post.comments as |comment|}}
-    {{comment-tile comment=comment destroyComment="destroyComment" update="update"}}
+    {{comment-tile comment=comment destroyComment="destroyComment" update="update" post=post}}
   {{/each}}
 {{/if}}
