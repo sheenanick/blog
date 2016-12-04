@@ -1,7 +1,10 @@
-# Ember-blog
+# Blog
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _Epicodus JavaScript Week 3, 10.27.2016_
+
+#### By Sheena Nickerson and Shelby Clayton
+
+This is a blog site about Portland, OR. Admins can add new blog posts, and update existing posts from the Admin portal (no login authentication). Admins can also delete posts they no longer want on the site. Users can navigate to individual posts and add new comments, update or delete their comments.
 
 ## Prerequisites
 
@@ -39,9 +42,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
@@ -51,3 +51,8 @@ Specify what it takes to deploy your app.
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+### License
+
+This software is licensed under the MIT license.
+
+Copyright (c) 2016 **_Sheena Nickerson and Shelby Clayton_**
